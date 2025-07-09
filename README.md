@@ -32,9 +32,7 @@ Ensure you have Java JDK 8 or higher installed.
 
 Clone or download the project files:
 
-bash
-Copy
-Edit
+
 git clone https://github.com/LYX-AI/Portfolio.git
 Import into IDE (e.g., IntelliJ IDEA).
 
@@ -45,9 +43,7 @@ Ensure you have .NET Framework 4.7 or higher installed.
 
 Clone or download the project files:
 
-bash
-Copy
-Edit
+
 git clone https://github.com/LYX-AI/Portfolio.git
 Open the ApiTester-DotNet folder in Visual Studio.
 
@@ -71,6 +67,7 @@ Java Version Interface:
 
 
 Project Structure:
+
 ![image](https://github.com/user-attachments/assets/3aee71db-b78e-47af-ae88-4ce077667e26)
 
 
