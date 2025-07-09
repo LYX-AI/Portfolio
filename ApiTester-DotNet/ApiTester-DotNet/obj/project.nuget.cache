@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "KDIBWKYT9i8=",
+  "success": true,
+  "projectFilePath": "D:\\ApiTester\\ApiTester-DotNet\\ApiTester-DotNet\\ApiTester-DotNet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lyx_3\\.nuget\\packages\\system.reactive\\6.0.1\\system.reactive.6.0.1.nupkg.sha512",
+    "C:\\Users\\lyx_3\\.nuget\\packages\\system.reactive.windows.forms\\6.0.1\\system.reactive.windows.forms.6.0.1.nupkg.sha512",
+    "C:\\Users\\lyx_3\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net8.0-windows7.0”还原包“System.Reactive.Windows.Forms 6.0.1”。此包可能与项目不完全兼容。",
+      "projectPath": "D:\\ApiTester\\ApiTester-DotNet\\ApiTester-DotNet\\ApiTester-DotNet.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\ApiTester\\ApiTester-DotNet\\ApiTester-DotNet\\ApiTester-DotNet.csproj",
+      "libraryId": "System.Reactive.Windows.Forms",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
+}
