@@ -71,12 +71,11 @@ Java Version Interface:
 
 
 Project Structure:
-ApiTester-Java/
-  ├─ src/
-     └─ ApiTester.java         # Java version of the API Test Tool
+![image](https://github.com/user-attachments/assets/3aee71db-b78e-47af-ae88-4ce077667e26)
 
-ApiTester-DotNet/
-  ├─ ApiTester.cs               # .NET version WinForms application
+
+![image](https://github.com/user-attachments/assets/a44aa7c3-8f48-4347-b6a8-988bab30eb16)
+
 
 Learning Outcomes
 During the development of this project, I learned and mastered the following technologies:
