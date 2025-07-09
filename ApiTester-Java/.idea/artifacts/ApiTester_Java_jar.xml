@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ApiTester-Java:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ApiTester_Java_jar</output-path>
+    <root id="archive" name="ApiTester-Java.jar">
+      <element id="module-output" name="ApiTester-Java" />
+    </root>
+  </artifact>
+</component>
