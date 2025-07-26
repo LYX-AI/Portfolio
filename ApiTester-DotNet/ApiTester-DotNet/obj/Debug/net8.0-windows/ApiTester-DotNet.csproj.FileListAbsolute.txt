@@ -16,3 +16,4 @@ D:\ApiTester\ApiTester-DotNet\ApiTester-DotNet\obj\Debug\net8.0-windows\refint\A
 D:\ApiTester\ApiTester-DotNet\ApiTester-DotNet\obj\Debug\net8.0-windows\ApiTester-DotNet.pdb
 D:\ApiTester\ApiTester-DotNet\ApiTester-DotNet\obj\Debug\net8.0-windows\ApiTester-DotNet.genruntimeconfig.cache
 D:\ApiTester\ApiTester-DotNet\ApiTester-DotNet\obj\Debug\net8.0-windows\ref\ApiTester-DotNet.dll
+D:\ApiTester\ApiTester-DotNet\ApiTester-DotNet\obj\Debug\net8.0-windows\ApiTester-DotNet.sourcelink.json

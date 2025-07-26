@@ -83,40 +83,19 @@ public class ApiTester : Form
     }
 
     // Simple JSON formatter
-    private string FormatJson(string json)
+   private string FormatJson(string json)
+{
+    try
     {
-        try
+        using var jDoc = System.Text.Json.JsonDocument.Parse(json);
+        return System.Text.Json.JsonSerializer.Serialize(jDoc.RootElement, new System.Text.Json.JsonSerializerOptions
         {
-            int indent = 0;
-            StringBuilder sb = new StringBuilder();
-            foreach (char c in json)
-            {
-                if (c == '{' || c == '[')
-                {
-                    sb.Append(c).Append('\n');
-                    indent++;
-                    sb.Append(new string(' ', indent * 2));
-                }
-                else if (c == '}' || c == ']')
-                {
-                    sb.Append('\n');
-                    indent--;
-                    sb.Append(new string(' ', indent * 2)).Append(c);
-                }
-                else if (c == ',')
-                {
-                    sb.Append(c).Append('\n').Append(new string(' ', indent * 2));
-                }
-                else
-                {
-                    sb.Append(c);
-                }
-            }
-            return sb.ToString();
-        }
-        catch
-        {
-            return json;
-        }
+            WriteIndented = true
+        });
     }
+    catch
+    {
+        return json;
+    }
+}
 }
