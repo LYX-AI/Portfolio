@@ -92,7 +92,7 @@ Enhance the user interface to make it more user-friendly.
 
 
 -------------------------------------------------------------------------------------------------------------
-## 🔹 ApiTester-JS: Automated API Testing Harness
+##  ApiTester-JS: Automated API Testing Harness
 
 <!-- Add this section to your main README.md -->
 
