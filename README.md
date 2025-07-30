@@ -90,7 +90,7 @@ Add features like request headers, custom validation to improve flexibility.
 
 Enhance the user interface to make it more user-friendly.
 
-Support file uploads and different request formats.
+
 -------------------------------------------------------------------------------------------------------------
 ## 🔹 ApiTester-JS: Automated API Testing Harness
 
