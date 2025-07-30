@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Test Runner</title>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+    button { padding: 0.5rem 1rem; font-size: 1rem; }
+    pre { background: #f4f4f4; padding: 1rem; overflow: auto; }
+  </style>
+</head>
+<body>
+  <h1>API 自动化测试界面</h1>
+  <button id="run">运行测试</button>
+  <pre id="output"></pre>
+
+  <script>
+    const btn = document.getElementById('run');
+    const out = document.getElementById('output');
+    btn.onclick = () => {
+      out.textContent = 'Running...';
+      fetch('/run-tests', { method: 'POST' })
+        .then(r => r.json())
+        .then(data => out.textContent = JSON.stringify(data, null, 2))
+        .catch(e => out.textContent = 'Error: ' + e);
+    };
+  </script>
+</body>
+</html>
