@@ -91,6 +91,71 @@ Add features like request headers, custom validation to improve flexibility.
 Enhance the user interface to make it more user-friendly.
 
 Support file uploads and different request formats.
+-------------------------------------------------------------------------------------------------------------
+## 🔹 ApiTester-JS: Automated API Testing Harness
+
+<!-- Add this section to your main README.md -->
+
+### Project Overview
+
+`ApiTester-JS` is a lightweight, TypeScript-powered API testing framework built with Jest and Axios. It offers:
+
+* **JSON-based Test Configuration**: Define each API test in `tests.json` with the endpoint URL, HTTP method, expected status code, and optional data length checks.
+* **Command-Line Testing**: Run `npm test` to execute all test cases and view PASS/FAIL results in your terminal.
+* **Browser-Based UI**: Launch a simple web interface with `npm start`, navigate to [http://localhost:3000](http://localhost:3000), and click **Run Tests** to see formatted JSON reports.
+* **Continuous Integration**: Integrated with GitHub Actions (`.github/workflows/ci.yml`) to automatically run tests on every push or pull request.
+
+### Quick Start
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/LYX-AI/Portfolio.git
+   cd ApiTester-JS
+   ```
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+3. **Run CLI tests**
+
+   ```bash
+   npm test
+   ```
+4. **Launch Web UI**
+
+   ```bash
+   npm start
+   ```
+
+   Open your browser at [http://localhost:3000](http://localhost:3000) and click **Run Tests**.
+
+### Directory Structure
+
+```
+ApiTester-JS/
+├── public/               # Static frontend files
+│   └── index.html        # Web UI entry point
+├── src/
+│   ├── server.ts         # Express server and test trigger endpoint
+│   └── testRunner.test.ts# Jest-based test runner
+├── tests.json            # JSON test case definitions
+├── package.json          # npm scripts & dependencies
+├── tsconfig.json         # TypeScript configuration
+└── .github/
+    └── workflows/        # GitHub Actions workflows
+        └── ci.yml        # CI configuration
+```
+
+### Continuous Integration (CI)
+
+![CI Status](https://github.com/LYX-AI/Portfolio.git/actions/workflows/ci.yml/badge.svg)
+
+* **Trigger**: On push or pull request to `main`/`master`, changes in `ApiTester-JS/**` or workflow file.
+* **Steps**: Checkout → Setup Node.js → `npm ci` → `npm test`.
+
+
 
 
 
