@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'ApiTester-JS/**'            # 只有 JS 项目有改动时才触发
+      - '.github/workflows/ci.yml'   # 或者工作流文件自身有改动时触发
+  pull_request:
+    branches:
+      - main
+      - master
+    paths:
+      - 'ApiTester-JS/**'
+      - '.github/workflows/ci.yml'
+
+jobs:
+  test-js:
+    name: Run JS API Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        working-directory: ApiTester-JS       # 切到你的子项目目录
+        run: npm ci
+
+      - name: Run tests
+        working-directory: ApiTester-JS
+        run: npm test

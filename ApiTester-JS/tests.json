@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Get the Users List",
+    "method": "GET",
+    "url": "https://jsonplaceholder.typicode.com/users",
+    "expect": {
+      "status": 200,
+      "minLength": 1
+    }
+  }
+]
